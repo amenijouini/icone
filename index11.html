@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ma première page en HTML</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div class="fab">
+            <img src="Group (1).svg" alt="">
+        </div>
+        <div class="box">
+            <a href="" class="item item1"><img src="facebook - FontAwesome.svg" alt=""></a>
+            <a href="" class="item item2"><img src="Linkedin 1.svg" alt=""></a>
+            <a href="" class="item item3"><img src="Instagram 1.svg" alt=""></a>
+        </div>
+        <script>
+            document.querySelector('fab').addEventListener('click',function(e){
+                document.querySelector('.box').classList.toggle('box-active');
+                document.querySelector('.fab').classList.toggle('fab-active');
+            });
+        </script> 
+    </body>
+</html>
